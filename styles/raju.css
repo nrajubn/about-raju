@@ -1,6 +1,180 @@
-#para1{
-    
-    color: darkcyan;
-    text-align: center;
 
+  
+body {
+    margin: 0;
 }
+#profile_pic{
+    border-radius: 50%;
+    max-width: 20%;
+    display: block;
+    flex-basis: 20%;
+}
+#main_header {
+    font-family: arial;
+    text-align: center;
+    font-size: 36px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav .navLinks {
+    flex-basis: 80%;
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color:whitesmoke;
+    flex-basis: 26%;
+}
+li a {
+    color: #9ebfb3;
+    text-decoration: none;
+    font-size: 24px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    flex-basis: 100%;
+}
+hr {
+    flex-basis: 100%;
+    margin: 5px;
+    border-width: 5px;
+    border-radius: 8px;
+    border-style: solid;
+    color: #2f2963;
+    margin-bottom: 20px;
+}
+.contentArea {
+    flex-basis: 100%;
+    display: flex;
+    margin: 10px 10px;
+}
+article {
+    flex-basis: 75%;
+}
+aside {
+    flex-basis: 25%;
+}
+aside a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border: 3px #43724f solid;
+    border-radius: 8px;
+    margin: 5px;
+    text-decoration: none;
+    color: #437266;
+}
+aside a:hover {
+    background-color: #2f2963;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: column;
+}
+section img {
+    width: 50%;
+}
+.centerContent {
+    text-align: center;
+}
+iframe {
+    padding: 20px;
+}
+footer {
+    background-color: #9ebfb3;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerText {
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 24px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 80%;
+    justify-content: center;
+}
+form label, input[type="text"], input[type="email"], textarea  {
+    flex-basis: 45%;
+    margin: 5px;
+    padding: 10px;
+    resize: none;
+}
+form label {
+    text-align: right;
+}
+form input[type="submit"] {
+    padding: 16px 75px;
+    border: none;
+    background-color: #2f2963;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 45%;
+}
+#contact_heading {
+    text-align: center;
+    flex-basis: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #2f2963;
+}
+th, td {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #profile_pic {
+        flex-basis: 10%;
+    }
+    .navLinks {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .navLinks li {
+        flex-basis: 100%;
+    }
+    aside {
+        flex-basis: 100%;
+    }
+    article {
+        flex-basis: 100%;
+    }
+    .contentArea {
+        flex-direction: column-reverse;
+    }
+    form {
+        flex-basis: 100%;
+    }
+}
+
+
